@@ -5,13 +5,13 @@ pipeline {
             steps {
               parallel(
               a: {
-              sh echo “welcome to devops”
+              sh @ echo “welcome to devops”
             },
               b: {      
-              sh echo “good morning”
+              sh @ echo “good morning”
             },
               c: {      
-              sh echo “hello hello”
+              sh @ echo “hello hello”
             }
           )     
        }
