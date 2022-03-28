@@ -1,0 +1,21 @@
+pipeline {
+   agent { label 'java' }
+     stages {
+       stage ('checkout') {
+         steps {
+           parallel (
+             a: {
+              sh "echo sharath"
+              },
+             b: {
+              sh "sh shamanur"
+              },
+             c: {
+              sh "davangere"
+             }
+            )
+           }
+          }
+         }
+        }
+           
