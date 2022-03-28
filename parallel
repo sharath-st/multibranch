@@ -5,13 +5,13 @@ pipeline {
          steps {
            parallel (
              a: {
-              sh "echo sharath"
+              sh 'echo "sharath"'
               },
              b: {
-              sh "sh shamanur"
+              sh 'echo "shamanur"'
               },
              c: {
-              sh "davangere"
+              sh 'echo "davangere"'
              }
             )
            }
